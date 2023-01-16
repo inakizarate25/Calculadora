@@ -1,0 +1,109 @@
+html{
+    box-sizing: border-box;
+    height: 100%;
+}
+*,
+*::after,
+::before{
+    padding: 0;
+    margin: 0;
+    box-sizing: inherit;
+}
+body {
+    display: grid;
+    place-items: center;
+    height: 100vh;
+    background-color: #111;
+}
+.wrapper {
+    height: 35rem;
+    width: 20rem;
+    background-color: blueviolet;
+    border-radius:10px ;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+}
+.display {
+    height: 25%;
+    background-color: aliceblue;
+    width: 90%;
+    font-size: 30px;
+    font-weight: bold;
+    padding: 30px;
+    text-align: end;
+    margin: 1rem;
+    border-radius: 5px;
+    box-shadow:
+  9.8px 9.8px 4px rgba(0, 0, 0, 0.014),
+  20.6px 20.6px 11px rgba(0, 0, 0, 0.02),
+  37.8px 37.8px 26.5px rgba(0, 0, 0, 0.026),
+  100px 100px 88px rgba(0, 0, 0, 0.04)
+;
+}
+.calc-buttons {
+    display: grid;
+    grid-template-rows: repeat(5, 1fr);
+    grid-template-columns: 1fr;
+    place-items: center;
+    gap: 1rem;
+    height: 75%;
+    width: 100%;
+    margin-bottom: 1rem;
+}
+.calc-buttons-row{
+    display: flex;
+    gap: 1rem;
+}
+.calc-button{
+    width: 3.5rem;
+    height: 3.5rem;
+    background-color: rgb(67, 4, 126);
+    border-radius: 5px;
+    color: aliceblue;
+    font-size: 30px;
+    font-weight: bold;
+    cursor: pointer;
+    border: none;
+    box-shadow:
+  9.8px 9.8px 4px rgba(0, 0, 0, 0.014),
+  20.6px 20.6px 11px rgba(0, 0, 0, 0.02),
+  37.8px 37.8px 26.5px rgba(0, 0, 0, 0.026),
+  100px 100px 88px rgba(0, 0, 0, 0.04)
+;
+}
+.calc-button:hover{
+    transform: scale(1.2);
+}
+.operador {
+    background-color: rgb(85, 0, 255);
+}
+.double {
+    width: 8rem;
+}
+.triple {
+    width: 12.5rem;
+}
+.triple:hover{
+    transform: scale(1.1);
+}
+
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 5vh;
+    background-color: blueviolet;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+footer p {
+    font-size: 30px;
+    color: aliceblue;
+    font-weight: bold;
+}
